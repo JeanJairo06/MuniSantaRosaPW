@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="bg-slate-50">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Web Municipal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#0B2E59',secondary:'#0F5CAD',accent:'#6EC1E4',soft:'#F1F5F9'},fontFamily:{sans:['Inter','sans-serif']}}}};</script>
+</head>
+<body class="font-sans text-slate-800">
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-secondary text-white rounded-lg grid place-items-center text-lg font-bold">
+            <img src="img/Logo.jpg" alt="">
+        </div>
+        <div>
+          <p class="text-primary font-semibold">Municipalidad Distrital de Santa Rosa</p>
+          <p class="text-xs text-slate-500">Portal Institucional</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm font-semibold text-primary">
+        <a class="hover:text-secondary" href="index.html">Inicio</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Información <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52 z-20">
+            <a class="px-4 py-2 hover:bg-soft" href="municipalidad.html">Municipalidad</a>
+            <a class="px-4 py-2 hover:bg-soft" href="noticias.html">Noticias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="transparencia.html">Transparencia</a>
+            <a class="px-4 py-2 hover:bg-soft" href="documentos.html">Documentos Públicos</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Servicios <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-56 z-20">
+            <a class="px-4 py-2 hover:bg-soft" href="tramites.html">Trámites Digitales</a>
+            <a class="px-4 py-2 hover:bg-soft" href="pagos.html">Pagos en Línea</a>
+            <a class="px-4 py-2 hover:bg-soft" href="denuncias.html">Reclamos y Denuncias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="contacto.html">Mesa de Partes Virtual</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Ciudad <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52 z-20">
+            <a class="px-4 py-2 hover:bg-soft" href="turismo.html">Turismo y Pesca</a>
+            <a class="px-4 py-2 hover:bg-soft" href="participacion.html">Participación Ciudadana</a>
+          </div>
+        </div>
+        <a class="hover:text-secondary" href="contacto.html">Contacto / MPV</a>
+        <a class="px-3 py-2 rounded-lg bg-secondary text-white hover:bg-primary" href="cms.html">CMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent opacity-90"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-10 items-center text-white">
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur">
+            <span class="bi bi-stars"></span>
+            <span>Sitio web oficial de la municipalidad</span>
+          </div>
+          <h1 class="text-4xl lg:text-5xl font-bold leading-tight">Portal Web Institucional</h1>
+          <p class="text-lg text-white/90">Accede a todos los módulos desde el menú. Trámites, pagos, denuncias, transparencia y participación en un solo lugar.</p>
+          <div class="flex flex-wrap gap-3">
+            <a class="px-5 py-3 bg-white text-primary rounded-lg font-semibold shadow hover:-translate-y-0.5 transition" href="tramites.html">Iniciar trámite</a>
+            <a class="px-5 py-3 bg-secondary text-white rounded-lg font-semibold shadow hover:-translate-y-0.5 transition" href="pagos.html">Pagar en línea</a>
+            <a class="px-5 py-3 bg-black/20 text-white rounded-lg font-semibold shadow hover:-translate-y-0.5 transition" href="denuncias.html">Registrar denuncia</a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+            <div class="p-4 bg-white/15 rounded-xl border border-white/10 backdrop-blur"><p class="text-2xl font-bold">24/7</p><p>Trámites digitales</p></div>
+            <div class="p-4 bg-white/15 rounded-xl border border-white/10 backdrop-blur"><p class="text-2xl font-bold">+1200</p><p>Documentos públicos</p></div>
+            <div class="p-4 bg-white/15 rounded-xl border border-white/10 backdrop-blur"><p class="text-2xl font-bold">98%</p><p>Pagos procesados</p></div>
+            <div class="p-4 bg-white/15 rounded-xl border border-white/10 backdrop-blur"><p class="text-2xl font-bold">Accesible</p><p>WCAG AA</p></div>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+          <img src="img/fondo.jpg" alt="Imagen del distrito" class="h-64 w-full object-cover">
+          <div class="p-6 space-y-4 text-slate-800">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-slate-500">Distrito costero</p>
+                <p class="text-xl font-semibold text-primary">Servicios al ciudadano</p>
+              </div>
+              <span class="bi bi-shield-check text-secondary text-2xl"></span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-sm">
+              <div class="p-4 bg-soft rounded-xl border border-slate-200"><p class="font-semibold">Transparencia</p><p class="text-slate-500">Ordenanzas y presupuesto.</p></div>
+              <div class="p-4 bg-soft rounded-xl border border-slate-200"><p class="font-semibold">Pagos</p><p class="text-slate-500">Culqi con comprobante.</p></div>
+              <div class="p-4 bg-soft rounded-xl border border-slate-200"><p class="font-semibold">Participación</p><p class="text-slate-500">Audiencias y consultas.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <p class="text-sm text-secondary font-semibold">Accesos rápidos</p>
+          <h2 class="text-2xl font-bold text-primary">Ve directo al módulo que necesitas</h2>
+        </div>
+        <a class="px-4 py-2 rounded-lg bg-primary text-white" href="transparencia.html">Ver Transparencia</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="tramites.html" class="block p-5 rounded-2xl bg-white shadow-sm border border-slate-200 hover:-translate-y-0.5 transition">
+          <div class="flex items-center gap-3">
+            <span class="bi bi-file-earmark-text text-secondary text-2xl"></span>
+            <div><p class="font-semibold text-primary">Trámites digitales</p><p class="text-sm text-slate-500">Inicia, adjunta y verifica en línea.</p></div>
+          </div>
+        </a>
+        <a href="pagos.html" class="block p-5 rounded-2xl bg-white shadow-sm border border-slate-200 hover:-translate-y-0.5 transition">
+          <div class="flex items-center gap-3">
+            <span class="bi bi-credit-card-2-front text-secondary text-2xl"></span>
+            <div><p class="font-semibold text-primary">Pagos en línea</p><p class="text-sm text-slate-500">Carrito, Culqi y comprobante.</p></div>
+          </div>
+        </a>
+        <a href="denuncias.html" class="block p-5 rounded-2xl bg-white shadow-sm border border-slate-200 hover:-translate-y-0.5 transition">
+          <div class="flex items-center gap-3">
+            <span class="bi bi-exclamation-octagon text-secondary text-2xl"></span>
+            <div><p class="font-semibold text-primary">Reclamos y denuncias</p><p class="text-sm text-slate-500">Registra y haz seguimiento.</p></div>
+          </div>
+        </a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="transparencia.html" class="block p-5 rounded-2xl bg-soft border hover:-translate-y-0.5 transition">
+          <p class="font-semibold text-primary">Transparencia</p>
+          <p class="text-sm text-slate-600">Ordenanzas, resoluciones, presupuesto.</p>
+        </a>
+        <a href="documentos.html" class="block p-5 rounded-2xl bg-soft border hover:-translate-y-0.5 transition">
+          <p class="font-semibold text-primary">Documentos públicos</p>
+          <p class="text-sm text-slate-600">Biblioteca digital con vista previa.</p>
+        </a>
+        <a href="turismo.html" class="block p-5 rounded-2xl bg-soft border hover:-translate-y-0.5 transition">
+          <p class="font-semibold text-primary">Turismo y pesca</p>
+          <p class="text-sm text-slate-600">Atractivos, ferias, playas y pesca.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-4 gap-6">
+      <div>
+        <p class="font-semibold text-lg">Municipalidad Distrital</p>
+        <p class="text-sm text-white/80">Dirección, horarios y canales oficiales.</p>
+        <p class="mt-3 text-sm"><span class="bi bi-geo"></span> Av. Principal 123</p>
+        <p class="text-sm"><span class="bi bi-clock"></span> Lun - Vie 8:00 - 17:00</p>
+      </div>
+      <div>
+        <p class="font-semibold">Enlaces</p>
+        <ul class="mt-2 space-y-1 text-sm text-white/80">
+          <li><a class="hover:text-white" href="transparencia.html">Transparencia</a></li>
+          <li><a class="hover:text-white" href="tramites.html">Trámites digitales</a></li>
+          <li><a class="hover:text-white" href="pagos.html">Pagos en línea</a></li>
+          <li><a class="hover:text-white" href="documentos.html">Documentos públicos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Legal</p>
+        <ul class="mt-2 space-y-1 text-sm text-white/80">
+          <li>Política de privacidad</li>
+          <li>Términos de uso</li>
+          <li>Accesibilidad</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Redes y contacto</p>
+        <div class="flex gap-3 text-xl mt-2">
+          <span class="bi bi-facebook"></span>
+          <span class="bi bi-twitter"></span>
+          <span class="bi bi-instagram"></span>
+          <span class="bi bi-youtube"></span>
+        </div>
+        <p class="mt-3 text-sm"><span class="bi bi-envelope"></span> contacto@municipalidad.gob.pe</p>
+        <p class="text-sm"><span class="bi bi-telephone"></span> (01) 123-4567</p>
+      </div>
+    </div>
+    <div class="text-center text-sm text-white/70 mt-6">Portal institucional · Responsive desktop / tablet / móvil</div>
+  </footer>
+</body>
+</html>

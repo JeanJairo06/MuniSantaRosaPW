@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="bg-slate-50">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Interno - Portal Municipal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#0B2E59',secondary:'#0F5CAD',soft:'#F1F5F9'},fontFamily:{sans:['Inter','sans-serif']}}}};</script>
+</head>
+<body class="font-sans text-slate-800">
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-secondary text-white rounded-lg grid place-items-center text-lg font-bold">MD</div>
+        <div>
+          <p class="text-primary font-semibold">Municipalidad Distrital</p>
+          <p class="text-xs text-slate-500">Portal Institucional</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm font-semibold text-primary">
+        <a class="hover:text-secondary" href="index.html">Inicio</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Información <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="municipalidad.html">Municipalidad</a>
+            <a class="px-4 py-2 hover:bg-soft" href="noticias.html">Noticias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="transparencia.html">Transparencia</a>
+            <a class="px-4 py-2 hover:bg-soft" href="documentos.html">Documentos Públicos</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Servicios <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-56">
+            <a class="px-4 py-2 hover:bg-soft" href="tramites.html">Trámites Digitales</a>
+            <a class="px-4 py-2 hover:bg-soft" href="pagos.html">Pagos en Línea</a>
+            <a class="px-4 py-2 hover:bg-soft" href="denuncias.html">Reclamos y Denuncias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="contacto.html">Mesa de Partes Virtual</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Ciudad <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="turismo.html">Turismo y Pesca</a>
+            <a class="px-4 py-2 hover:bg-soft" href="participacion.html">Participación Ciudadana</a>
+          </div>
+        </div>
+        <a class="hover:text-secondary" href="contacto.html">Contacto / MPV</a>
+        <a class="px-3 py-2 rounded-lg bg-secondary text-white hover:bg-primary" href="cms.html">CMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    <section class="bg-white p-6 rounded-3xl border shadow-sm space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <p class="text-sm text-secondary font-semibold">CMS Interno</p>
+          <h1 class="text-3xl font-bold text-primary">Panel de gestión</h1>
+        </div>
+        <div class="flex gap-2">
+          <button class="px-4 py-2 bg-primary text-white rounded-lg">Dashboard</button>
+          <button class="px-4 py-2 bg-white border rounded-lg">Usuarios</button>
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-3 gap-4">
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Panel de inicio</p>
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <div class="p-3 rounded-xl bg-white">Noticias: 24</div>
+            <div class="p-3 rounded-xl bg-white">Documentos: 182</div>
+            <div class="p-3 rounded-xl bg-white">Transparencia: 96</div>
+            <div class="p-3 rounded-xl bg-white">Usuarios: 12</div>
+          </div>
+          <div class="p-3 rounded-xl bg-white">Analytics: visitas, tiempos y descargas.</div>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Gestión de noticias</p>
+          <input class="w-full border rounded-lg px-3 py-2" placeholder="Título" />
+          <textarea class="w-full border rounded-lg px-3 py-2" rows="2" placeholder="Contenido"></textarea>
+          <div class="flex gap-2 text-xs text-slate-600">
+            <span class="px-2 py-1 rounded bg-white">Imagen</span>
+            <span class="px-2 py-1 rounded bg-white">Fecha</span>
+            <span class="px-2 py-1 rounded bg-white">Categoría</span>
+          </div>
+          <button class="px-4 py-2 bg-secondary text-white rounded-lg">Publicar</button>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Gestor de transparencia</p>
+          <select class="w-full border rounded-lg px-3 py-2"><option>Ordenanza</option><option>Presupuesto</option></select>
+          <div class="border-dashed border rounded-xl p-3 text-center text-slate-500">Subir PDF</div>
+          <div class="flex gap-2 text-sm text-secondary">
+            <button class="bi bi-pencil"></button>
+            <button class="bi bi-eye"></button>
+            <button class="bi bi-trash"></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-2 gap-4">
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Control de sliders / banners</p>
+          <div class="space-y-2 text-sm">
+            <div class="p-3 rounded-xl bg-white flex items-center justify-between">
+              <div>
+                <p class="font-semibold">Banner playa segura</p>
+                <p class="text-xs text-slate-500">Activo</p>
+              </div>
+              <div class="flex gap-2 text-secondary">
+                <button class="bi bi-toggle-on"></button>
+                <button class="bi bi-pencil"></button>
+              </div>
+            </div>
+            <div class="p-3 rounded-xl bg-white flex items-center justify-between">
+              <div>
+                <p class="font-semibold">Pago predial</p>
+                <p class="text-xs text-slate-500">Programado</p>
+              </div>
+              <div class="flex gap-2 text-secondary">
+                <button class="bi bi-toggle-off"></button>
+                <button class="bi bi-pencil"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Usuarios y roles</p>
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center justify-between p-3 rounded-xl bg-white">
+              <div>
+                <p class="font-semibold">Administrador</p>
+                <p class="text-xs text-slate-500">Permisos completos</p>
+              </div>
+              <div class="flex gap-2 text-secondary">
+                <button class="bi bi-person-plus"></button>
+                <button class="bi bi-key"></button>
+              </div>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-xl bg-white">
+              <div>
+                <p class="font-semibold">Editor</p>
+                <p class="text-xs text-slate-500">Noticias y páginas</p>
+              </div>
+              <div class="flex gap-2 text-secondary">
+                <button class="bi bi-pencil"></button>
+                <button class="bi bi-trash"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-3 lg:col-span-2">
+          <p class="font-semibold text-primary">Edición de páginas</p>
+          <div class="p-3 rounded-xl bg-soft border-dashed text-sm text-slate-600">Arrastra bloques: hero, galerías, botones, tablas.</div>
+          <div class="grid sm:grid-cols-2 gap-2 text-sm">
+            <div class="p-3 rounded-xl bg-soft border"><p class="font-semibold text-primary">Contenido</p><p class="text-xs text-slate-500">Editor WYSIWYG + markdown</p></div>
+            <div class="p-3 rounded-xl bg-soft border"><p class="font-semibold text-primary">SEO</p><p class="text-xs text-slate-500">Metadatos y accesibilidad</p></div>
+          </div>
+          <div class="border-dashed border rounded-xl p-3 text-sm text-slate-600">Carga de documentos (PDF/imagen) y asignación a página.</div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Vista de analytics</p>
+          <p class="text-sm text-slate-600">Visitas, conversiones y descargas por módulo.</p>
+          <div class="h-28 rounded-xl bg-soft border border-dashed grid place-items-center text-slate-400">Gráfico</div>
+          <div class="flex gap-2 text-xs text-slate-600">
+            <span class="px-2 py-1 rounded bg-soft">Top páginas</span>
+            <span class="px-2 py-1 rounded bg-soft">Embudo trámites</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-sm flex flex-wrap gap-4 justify-between">
+      <span>CMS interno · Mockup</span>
+      <span class="text-white/80">Volver a Inicio: <a class="underline" href="index.html">index.html</a></span>
+    </div>
+  </footer>
+</body>
+</html>

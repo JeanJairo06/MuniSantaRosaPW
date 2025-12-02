@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="bg-slate-50">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reclamos y Denuncias - Portal Municipal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#0B2E59',secondary:'#0F5CAD',soft:'#F1F5F9'},fontFamily:{sans:['Inter','sans-serif']}}}};</script>
+</head>
+<body class="font-sans text-slate-800">
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-secondary text-white rounded-lg grid place-items-center text-lg font-bold">MD</div>
+        <div>
+          <p class="text-primary font-semibold">Municipalidad Distrital</p>
+          <p class="text-xs text-slate-500">Portal Institucional</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm font-semibold text-primary">
+        <a class="hover:text-secondary" href="index.html">Inicio</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Información <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="municipalidad.html">Municipalidad</a>
+            <a class="px-4 py-2 hover:bg-soft" href="noticias.html">Noticias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="transparencia.html">Transparencia</a>
+            <a class="px-4 py-2 hover:bg-soft" href="documentos.html">Documentos Públicos</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Servicios <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-56">
+            <a class="px-4 py-2 hover:bg-soft" href="tramites.html">Trámites Digitales</a>
+            <a class="px-4 py-2 hover:bg-soft" href="pagos.html">Pagos en Línea</a>
+            <a class="px-4 py-2 hover:bg-soft" href="denuncias.html">Reclamos y Denuncias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="contacto.html">Mesa de Partes Virtual</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Ciudad <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="turismo.html">Turismo y Pesca</a>
+            <a class="px-4 py-2 hover:bg-soft" href="participacion.html">Participación Ciudadana</a>
+          </div>
+        </div>
+        <a class="hover:text-secondary" href="contacto.html">Contacto / MPV</a>
+        <a class="px-3 py-2 rounded-lg bg-secondary text-white hover:bg-primary" href="cms.html">CMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    <section class="grid lg:grid-cols-2 gap-6">
+      <div class="space-y-4 bg-white p-6 rounded-3xl border shadow-sm">
+        <p class="text-sm text-secondary font-semibold">Reclamos y Denuncias</p>
+        <h1 class="text-3xl font-bold text-primary">Formulario completo</h1>
+        <select class="w-full border rounded-lg px-3 py-2"><option>Tipo de denuncia</option><option>Ambiental</option><option>Seguridad</option></select>
+        <textarea class="w-full border rounded-lg px-3 py-2" rows="3" placeholder="Descripción"></textarea>
+        <input class="w-full border rounded-lg px-3 py-2" placeholder="Ubicación" />
+        <div class="border-dashed border rounded-xl p-4 text-sm text-slate-600">Adjuntar foto / video</div>
+        <input class="w-full border rounded-lg px-3 py-2" placeholder="Datos opcionales del denunciante" />
+        <div class="flex items-center gap-2 text-sm text-slate-600"><span class="bi bi-shield-lock"></span>Captcha / verificación</div>
+        <button class="w-full py-3 rounded-lg bg-primary text-white">Enviar denuncia</button>
+        <div class="p-3 bg-soft rounded-lg text-sm text-slate-600">Confirmación con código: <span class="text-primary font-semibold">DEN-2025-0321</span></div>
+      </div>
+      <div class="space-y-4 bg-white p-6 rounded-3xl border shadow-sm">
+        <p class="text-sm text-secondary font-semibold">Panel de seguimiento</p>
+        <input class="w-full border rounded-lg px-3 py-2" placeholder="Ingresa tu código" />
+        <button class="w-full py-2 rounded-lg bg-secondary text-white">Consultar estado</button>
+        <div class="p-3 rounded-lg bg-soft text-sm text-slate-600">
+          <p>Estado: <span class="text-secondary font-semibold">En revisión</span></p>
+          <p>Última actualización: 14 Nov 2025</p>
+          <p>Área asignada: Seguridad ciudadana</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-3">
+          <p class="font-semibold text-primary">Accesos rápidos</p>
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <button class="px-3 py-2 rounded-lg bg-soft border">Denuncia anónima</button>
+            <button class="px-3 py-2 rounded-lg bg-soft border">Ver mapa</button>
+            <button class="px-3 py-2 rounded-lg bg-soft border">Denuncia ambiental</button>
+            <button class="px-3 py-2 rounded-lg bg-soft border">Denuncia vial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-sm flex flex-wrap gap-4 justify-between">
+      <span>Reclamos y denuncias · Portal institucional</span>
+      <span class="text-white/80">Seguimiento en línea: usa tu código en esta página</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="bg-slate-50">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Municipalidad - Portal Municipal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#0B2E59', secondary: '#0F5CAD', accent: '#6EC1E4', soft: '#F1F5F9' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } };</script>
+</head>
+
+<body class="font-sans text-slate-800">
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-secondary text-white rounded-lg grid place-items-center text-lg font-bold">MD</div>
+        <div>
+          <p class="text-primary font-semibold">Municipalidad Distrital - Santa Rosa</p>
+          <p class="text-xs text-slate-500">Portal Institucional</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm font-semibold text-primary">
+        <a class="hover:text-secondary" href="index.html">Inicio</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Información <span
+              class="bi bi-chevron-down text-xs"></span></button>
+          <div
+            class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="municipalidad.html">Municipalidad</a>
+            <a class="px-4 py-2 hover:bg-soft" href="noticias.html">Noticias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="transparencia.html">Transparencia</a>
+            <a class="px-4 py-2 hover:bg-soft" href="documentos.html">Documentos Públicos</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Servicios <span
+              class="bi bi-chevron-down text-xs"></span></button>
+          <div
+            class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-56">
+            <a class="px-4 py-2 hover:bg-soft" href="tramites.html">Trámites Digitales</a>
+            <a class="px-4 py-2 hover:bg-soft" href="pagos.html">Pagos en Línea</a>
+            <a class="px-4 py-2 hover:bg-soft" href="denuncias.html">Reclamos y Denuncias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="contacto.html">Mesa de Partes Virtual</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Ciudad <span
+              class="bi bi-chevron-down text-xs"></span></button>
+          <div
+            class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="turismo.html">Turismo y Pesca</a>
+            <a class="px-4 py-2 hover:bg-soft" href="participacion.html">Participación Ciudadana</a>
+          </div>
+        </div>
+        <a class="hover:text-secondary" href="contacto.html">Contacto / MPV</a>
+        <a class="px-3 py-2 rounded-lg bg-secondary text-white hover:bg-primary" href="cms.html">CMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+<section class="bg-white rounded-3xl border shadow-sm p-6 grid place-items-center">
+  <img src="img/muni.png" alt="" class="max-w-full h-auto">
+</section>
+
+    <section class="bg-white rounded-3xl border shadow-sm p-6 grid lg:grid-cols-2 gap-6">
+      <div class="space-y-3">
+        <p class="text-sm text-secondary font-semibold">Municipalidad</p>
+        <h1 class="text-3xl font-bold text-primary">Institucional y gobierno abierto</h1>
+        <p class="text-slate-600">Información de alcaldía, gerencias, organigrama, normativa y enlaces a mesa de partes
+          virtual.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <a class="px-4 py-2 rounded-lg bg-secondary text-white" href="tramites.html">Mesa de Partes</a>
+          <a class="px-4 py-2 rounded-lg bg-white border text-secondary" href="contacto.html">Agenda una cita</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div class="p-4 rounded-2xl bg-soft border">
+          <p class="font-semibold text-primary">Alcaldía</p>
+          <p class="text-slate-600">Plan de gobierno y mensaje.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-soft border">
+          <p class="font-semibold text-primary">Gerencias</p>
+          <p class="text-slate-600">Responsables y servicios.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-soft border">
+          <p class="font-semibold text-primary">Organigrama</p>
+          <p class="text-slate-600">Estructura y dependencias.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-soft border">
+          <p class="font-semibold text-primary">Normativa</p>
+          <p class="text-slate-600">ROF, MOF, TUPA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid lg:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-3xl border shadow-sm space-y-3">
+        <p class="font-semibold text-primary">Subpáginas internas</p>
+        <div class="grid sm:grid-cols-2 gap-2 text-sm">
+          <span class="px-3 py-2 rounded-lg bg-soft border">Consejo municipal</span>
+          <span class="px-3 py-2 rounded-lg bg-soft border">Planes estratégicos</span>
+          <span class="px-3 py-2 rounded-lg bg-soft border">Convenios</span>
+          <span class="px-3 py-2 rounded-lg bg-soft border">Obras en ejecución</span>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-3xl border shadow-sm space-y-3">
+        <p class="font-semibold text-primary">Contactos clave</p>
+        <div class="space-y-2 text-sm text-slate-600">
+          <p><span class="bi bi-person"></span> Alcaldía: alcaldia@municipalidad.gob.pe</p>
+          <p><span class="bi bi-envelope"></span> Secretaría: secretaria@municipalidad.gob.pe</p>
+          <p><span class="bi bi-geo"></span> Av. Principal 123 - Horario: 8:00 - 17:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-sm flex flex-wrap gap-4 justify-between">
+      <span>Municipalidad Distrital · Portal institucional</span>
+      <span class="text-white/80">Soporte: contacto@municipalidad.gob.pe · (01) 123-4567</span>
+    </div>
+  </footer>
+</body>
+
+</html>

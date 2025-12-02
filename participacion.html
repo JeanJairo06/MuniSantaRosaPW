@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="bg-slate-50">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participación Ciudadana - Portal Municipal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#0B2E59',secondary:'#0F5CAD',soft:'#F1F5F9'},fontFamily:{sans:['Inter','sans-serif']}}}};</script>
+</head>
+<body class="font-sans text-slate-800">
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-secondary text-white rounded-lg grid place-items-center text-lg font-bold">MD</div>
+        <div>
+          <p class="text-primary font-semibold">Municipalidad Distrital</p>
+          <p class="text-xs text-slate-500">Portal Institucional</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm font-semibold text-primary">
+        <a class="hover:text-secondary" href="index.html">Inicio</a>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Información <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="municipalidad.html">Municipalidad</a>
+            <a class="px-4 py-2 hover:bg-soft" href="noticias.html">Noticias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="transparencia.html">Transparencia</a>
+            <a class="px-4 py-2 hover:bg-soft" href="documentos.html">Documentos Públicos</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Servicios <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-56">
+            <a class="px-4 py-2 hover:bg-soft" href="tramites.html">Trámites Digitales</a>
+            <a class="px-4 py-2 hover:bg-soft" href="pagos.html">Pagos en Línea</a>
+            <a class="px-4 py-2 hover:bg-soft" href="denuncias.html">Reclamos y Denuncias</a>
+            <a class="px-4 py-2 hover:bg-soft" href="contacto.html">Mesa de Partes Virtual</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary">Ciudad <span class="bi bi-chevron-down text-xs"></span></button>
+          <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white border rounded-xl shadow-lg py-2 w-52">
+            <a class="px-4 py-2 hover:bg-soft" href="turismo.html">Turismo y Pesca</a>
+            <a class="px-4 py-2 hover:bg-soft" href="participacion.html">Participación Ciudadana</a>
+          </div>
+        </div>
+        <a class="hover:text-secondary" href="contacto.html">Contacto / MPV</a>
+        <a class="px-3 py-2 rounded-lg bg-secondary text-white hover:bg-primary" href="cms.html">CMS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    <section class="bg-white p-6 rounded-3xl border shadow-sm space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <p class="text-sm text-secondary font-semibold">Participación</p>
+          <h1 class="text-3xl font-bold text-primary">Escucha activa</h1>
+          <p class="text-slate-600">Encuestas, buzón de sugerencias, audiencias públicas y consulta vecinal.</p>
+        </div>
+        <a class="px-4 py-2 bg-primary text-white rounded-lg" href="contacto.html">Programar audiencia</a>
+      </div>
+      <div class="grid lg:grid-cols-4 gap-4">
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm">
+          <h3 class="font-semibold text-primary">Encuestas</h3>
+          <p class="text-sm text-slate-600">Participa en decisiones clave.</p>
+          <button class="mt-3 px-4 py-2 bg-secondary text-white rounded-lg">Responder</button>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm">
+          <h3 class="font-semibold text-primary">Buzón de sugerencias</h3>
+          <textarea class="w-full border rounded-lg px-3 py-2 mt-2" rows="3" placeholder="Tu mensaje"></textarea>
+          <button class="mt-2 px-4 py-2 bg-primary text-white rounded-lg">Enviar</button>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm">
+          <h3 class="font-semibold text-primary">Audiencias públicas</h3>
+          <p class="text-sm text-slate-600">Agenda y transmisión en vivo.</p>
+          <button class="mt-3 px-4 py-2 bg-secondary text-white rounded-lg">Ver agenda</button>
+        </div>
+        <div class="bg-soft p-4 rounded-2xl border shadow-sm">
+          <h3 class="font-semibold text-primary">Consulta vecinal</h3>
+          <p class="text-sm text-slate-600">Vota sobre proyectos distritales.</p>
+          <button class="mt-3 px-4 py-2 bg-secondary text-white rounded-lg">Participar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-sm flex flex-wrap gap-4 justify-between">
+      <span>Participación ciudadana · Portal institucional</span>
+      <span class="text-white/80">Contacta vía <a class="underline" href="contacto.html">Mesa de Partes Virtual</a></span>
+    </div>
+  </footer>
+</body>
+</html>
